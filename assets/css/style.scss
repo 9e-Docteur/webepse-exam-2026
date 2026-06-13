@@ -1,0 +1,114 @@
+@use "_navbar.scss" as nav;
+@use "_btn" as btn;
+@use "_font" as font;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../assets/img/tile.png") #fcecda;
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+h1{
+    font-family: "pain-de-mie", sans-serif;
+    color: var(--primary-color);
+}
+
+p{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+.home {
+
+    .star {
+        opacity: 0;
+        animation: apparence 0.8s 0.8s ease forwards;
+        &:nth-of-type(1) {
+            filter: invert(18%) sepia(92%) saturate(7492%) hue-rotate(356deg);
+        }
+
+        &:nth-of-type(2) {
+            filter: invert(80%) sepia(60%) saturate(7492%) hue-rotate(360deg);
+        }
+    }
+
+    p {
+        opacity: 0;
+        animation: apparence 0.5s 0.2s ease forwards;
+        color: var(--primary-color);
+        font-family: "elza-round-variable", monospace;
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+
+    img {
+        width: 320px;
+        opacity: 0;
+        animation: apparence 2s 1s ease forwards;
+    }
+
+    .btn {
+        margin-top: 40px;
+    }
+}
+
+.date {
+    display : flex;
+    gap: 8px;
+
+    img {
+        width: 12px;
+    }
+}
+
+.flex-container  {
+    display: flex;
+    justify-content: center;
+}
+
+.l-gap {
+    gap: 128px;
+}
+
+.divided{
+    width: 50%;
+}
+
+.illustration {
+    width: 587px;
+}
+
+@keyframes apparence{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}

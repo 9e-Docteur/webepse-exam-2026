@@ -1,0 +1,120 @@
+@use "_colors" as c;
+@use "_font" as f;
+
+@font-face {
+    font-family: "Inter";
+    src: url("../assets/font/Inter.ttf");
+}
+
+nav {
+    background-color: var(--primary-color);
+    width: 95%;
+    height: 79px;
+    margin: 16px auto;
+    z-index: 999;
+
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    border-radius: 9px 9px 0 0;
+
+    img {
+        height: inherit;
+    }
+
+
+    ul {
+        display: flex;
+        position: relative;
+        transform: translateY(30px);
+        float: right;
+        gap: 48px;
+
+        list-style: none;
+
+        li {
+            a {
+                position: relative;
+                display: inline-block;
+
+                font-family: "Albert Sans", system-ui;
+                font-weight: bold;
+                font-size: 20px;
+                color: var(--primary-text-color);
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -3px;
+
+                    width: 0;
+                    height: 2px;
+
+                    background-color: white;
+                    transition: width 0.3s ease;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.blackboard {
+    background-color: #303030;
+    width: 100%;
+    height: 45px;
+    z-index: 1;
+    position: relative;
+    transform: translateY(-5px);
+    border-radius: 0px 0px 9px 9px;
+    overflow: hidden;
+
+
+    .nav-lineup {
+        margin: 0 auto;
+        margin-left: 8px;
+        margin-right: 8px;
+        height: 40%;
+        transform: translateY(85%);
+        color: white;
+
+        display: flex;
+        align-items: center;
+
+        gap: 12px;
+        font-family: "Albert Sans", cursive;
+        font-size: large;
+        font-weight: bold;
+
+        animation: animLineUp 35s linear infinite;
+        will-change: transform;
+
+        p {
+            font-family: "Inter", "system-ui";
+            text-transform: uppercase;
+            flex-shrink: 0;
+        }
+
+        span {
+            color: var(--secondary-color);
+        }
+    }
+}
+
+
+@keyframes animLineUp {
+    from {
+        transform: translate3d(0, 85%, 0);
+    }
+
+    to {
+        transform: translate3d(-135%, 85%, 0);
+    }
+}
