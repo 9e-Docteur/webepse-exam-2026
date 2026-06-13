@@ -8,7 +8,15 @@
     text-decoration: none;
     font-size: 26px;
     text-align: center;
-    border: 0px solid transparent;
+    border: 1px solid transparent;
+
+    box-shadow: 0px 3px 8px 2px rgba(0, 0, 0, 0.5);
+
+    i {
+        font-size: 18px;
+        margin-left: 8px;
+    }
+
 
     &:hover {
         filter: saturate(50%);
@@ -23,7 +31,7 @@
 .btn-primary {
     background-color: var(--primary-color);
 
-    &:hover{
+    &:hover {
         border: 1px solid var(--primary-color);
     }
 }
@@ -43,17 +51,62 @@
     font-weight: bold;
 
     margin-right: 26px;
-    
+
     transform: translate(0, -16px);
 
-    box-shadow: 0px 3px 5px 0.5px black;
+    box-shadow: 0px 3px 5px 0.5px rgba(0, 0, 0, 0.527);
 
     border: 6px solid transparent;
+    transition: all 0.25s;
 
     &:hover {
         background-color: transparent;
         border-color: var(--secondary-color);
         color: var(--secondary-color);
         text-shadow: 1px 1px 5px var(--secondary-color);
+        box-shadow: 0px 3px 5px 0.5px var(--secondary-color);
+    }
+}
+
+.btn-date {
+    height: fit-content;
+    width: fit-content;
+
+    a {
+        border: 1px solid var(--primary-color);
+        border-radius: 36px;
+        padding: 8px;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        color: var(--primary-color);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.25s;
+
+        &:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+    }
+}
+
+.btn-rounded {
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    border: 1px solid transparent;
+    padding: 15px;
+    transition: all 0.25s;
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid var(--primary-color);
+
+        a {
+            color: var(--primary-color);
+        }
+    }
+
+    a {
+        color: white;
+        font-size: 24px;
     }
 }

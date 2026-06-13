@@ -1,0 +1,30 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    background-color: var(--primary-color);
+
+    border-radius: 16px;
+
+    width: 200px;
+    height: fit-content;
+    overflow: hidden;
+
+    p {
+        color: white;
+        font-family: "pain-de-mie", sans-serif;
+        text-align: center;
+        font-size: 36px;
+        padding: 8px;
+    }
+}
+
+.card-img {
+    img {
+        width: 200px;
+        border-radius: 16px;
+        box-shadow: 0px 5px 5px -0.5px rgba(0, 0, 0, 0.432);
+    }
+}
