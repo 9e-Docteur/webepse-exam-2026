@@ -28,3 +28,19 @@
         box-shadow: 0px 5px 5px -0.5px rgba(0, 0, 0, 0.432);
     }
 }
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding-top: 32px;   
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
+    margin-top: 32px;   
+}

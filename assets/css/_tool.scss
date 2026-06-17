@@ -17,6 +17,10 @@
     width: 50%;
 }
 
+.w-fit {
+    width: fit-content;
+}
+
 .illustration {
     width: 587px;
 }
@@ -53,6 +57,14 @@
 
 .mr-24 {
     margin-right: 24px;
+}
+
+.mr-30{
+    margin-right: 30%;
+}
+
+.ml-30{
+    margin-left: 30%;
 }
 
 .m-centered {

@@ -1,0 +1,191 @@
+@media screen and (max-width: 402px) {
+    nav {
+        width: 98%;
+        height: 60px;
+        border-radius: 0;
+        position: fixed;
+
+        ul {
+            display: none;
+
+            li {
+                a {}
+            }
+        }
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .l-gap {
+        gap: 0px;
+    }
+
+    .illustration {
+        width: 100%;
+    }
+
+    #illustrationUne,
+    #illustrationDeux {
+
+        h1,
+        p {
+            text-align: center;
+        }
+
+        a {
+            display: block;
+            margin: 25px auto;
+        }
+    }
+
+    .devided {
+        width: 100%;
+    }
+
+    .slide-content {
+        padding-top: 0px;
+        margin-top: 180px;
+    }
+
+    .btn-date-wrapper {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 12px;
+        width: 100%;
+        padding: 10px 0;
+        scroll-snap-type: x mandatory;
+    }
+
+    .btn-date {
+        flex-shrink: 0;
+        height: fit-content;
+        width: fit-content;
+        scroll-snap-align: center;
+    }
+
+    #lineup {
+        .card-scroll-wrapper {
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        .card {
+            flex-shrink: 0;
+            scroll-snap-align: center;
+        }
+
+        .flex-container:last-of-type {
+            justify-content: center;
+            margin-top: 20px;
+        }
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        margin-top: 20px;
+    }
+
+    .engagementImg {
+        display: none;
+    }
+
+    #infos {
+        img {
+            display: none;
+        }
+
+        h1 {
+            margin: 0 auto;
+        }
+
+        h1, p {
+            width: 80% !important;
+            text-align: center;
+        }
+
+        .btn {
+            display: block;
+            margin: 25px auto;
+        }
+    }
+
+    .mr-30 {
+        margin-right: 0;
+    }
+
+    .ml-30 {
+        margin: 0;
+    }
+
+    .ml-24 {
+        margin: 0;
+    }
+
+    .mr-24 {
+        margin-right: 0;
+    }
+
+    .right-text-align {
+        text-align: center;
+    }
+
+    .txt-content {
+        width: 90%;
+        margin: 0 auto;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .desc {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contact {
+        display: block;
+        margin: 0 auto;
+        width: 90% !important;
+    }
+
+    .form-group {
+        input {
+            width: 85% !important;
+        }
+    }
+
+    textarea {
+        width: 95% !important;
+    }
+
+    .partenaires {
+        img:nth-of-type(n+3) {
+            display: none;
+        }
+    }
+
+    .footer-contact {
+        img {
+            margin: 0 auto;
+            width: fit-content;
+            height: fit-content;
+        }
+    }
+}

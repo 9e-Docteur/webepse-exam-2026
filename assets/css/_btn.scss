@@ -68,6 +68,12 @@
     }
 }
 
+.btn-date-wrapper {
+    display: flex;
+    gap: 24px;
+    margin-left: 16px;
+}
+
 .btn-date {
     height: fit-content;
     width: fit-content;
@@ -95,6 +101,7 @@
     border: 1px solid transparent;
     padding: 15px;
     transition: all 0.25s;
+    width: fit-content;
 
     &:hover {
         background-color: transparent;

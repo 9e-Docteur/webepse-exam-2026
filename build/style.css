@@ -162,6 +162,12 @@ nav ul li a:hover::after {
   box-shadow: 0px 3px 5px 0.5px var(--secondary-color);
 }
 
+.btn-date-wrapper {
+  display: flex;
+  gap: 24px;
+  margin-left: 16px;
+}
+
 .btn-date {
   height: fit-content;
   width: fit-content;
@@ -187,6 +193,7 @@ nav ul li a:hover::after {
   border: 1px solid transparent;
   padding: 15px;
   transition: all 0.25s;
+  width: fit-content;
 }
 .btn-rounded:hover {
   background-color: transparent;
@@ -217,6 +224,10 @@ nav ul li a:hover::after {
 
 .divided {
   width: 50%;
+}
+
+.w-fit {
+  width: fit-content;
 }
 
 .illustration {
@@ -255,6 +266,14 @@ nav ul li a:hover::after {
 
 .mr-24 {
   margin-right: 24px;
+}
+
+.mr-30 {
+  margin-right: 30%;
+}
+
+.ml-30 {
+  margin-left: 30%;
 }
 
 .m-centered {
@@ -310,6 +329,165 @@ nav ul li a:hover::after {
   box-shadow: 0px 5px 5px -0.5px rgba(0, 0, 0, 0.432);
 }
 
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding-top: 32px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 128px;
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 402px) {
+  nav {
+    width: 98%;
+    height: 60px;
+    border-radius: 0;
+    position: fixed;
+  }
+  nav ul {
+    display: none;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .l-gap {
+    gap: 0px;
+  }
+  .illustration {
+    width: 100%;
+  }
+  #illustrationUne h1,
+  #illustrationUne p,
+  #illustrationDeux h1,
+  #illustrationDeux p {
+    text-align: center;
+  }
+  #illustrationUne a,
+  #illustrationDeux a {
+    display: block;
+    margin: 25px auto;
+  }
+  .devided {
+    width: 100%;
+  }
+  .slide-content {
+    padding-top: 0px;
+    margin-top: 180px;
+  }
+  .btn-date-wrapper {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 12px;
+    width: 100%;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+  }
+  .btn-date {
+    flex-shrink: 0;
+    height: fit-content;
+    width: fit-content;
+    scroll-snap-align: center;
+  }
+  #lineup .card-scroll-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    padding: 0 10px;
+  }
+  #lineup .card-container {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  #lineup .card {
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+  #lineup .flex-container:last-of-type {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 20px;
+  }
+  .engagementImg {
+    display: none;
+  }
+  #infos img {
+    display: none;
+  }
+  #infos h1 {
+    margin: 0 auto;
+  }
+  #infos h1, #infos p {
+    width: 80% !important;
+    text-align: center;
+  }
+  #infos .btn {
+    display: block;
+    margin: 25px auto;
+  }
+  .mr-30 {
+    margin-right: 0;
+  }
+  .ml-30 {
+    margin: 0;
+  }
+  .ml-24 {
+    margin: 0;
+  }
+  .mr-24 {
+    margin-right: 0;
+  }
+  .right-text-align {
+    text-align: center;
+  }
+  .txt-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .txt-content p {
+    text-align: center;
+  }
+  .desc {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contact {
+    display: block;
+    margin: 0 auto;
+    width: 90% !important;
+  }
+  .form-group input {
+    width: 85% !important;
+  }
+  textarea {
+    width: 95% !important;
+  }
+  .partenaires img:nth-of-type(n+3) {
+    display: none;
+  }
+  .footer-contact img {
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -386,13 +564,31 @@ body {
   width: 12px;
 }
 
-input[type=search] {
+.search-wrapper {
+  position: relative;
+  width: 321px;
+}
+.search-wrapper input[type=search] {
   border: 1px solid var(--primary-color);
   border-radius: 22px;
-  width: 321px;
+  width: 100%;
   height: 55px;
-  font-family: "M PLUS Rounded 1c", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "M PLUS Rounded 1c", system-ui, sans-serif;
   font-size: 18px;
+  outline: none;
+  padding-left: 40px;
+}
+.search-wrapper input[type=search]:focus {
+  border: 1px solid var(--secondary-color);
+}
+.search-wrapper i {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+  font-size: 16px;
 }
 
 .engagementImg {
@@ -416,6 +612,7 @@ input[type=search] {
 }
 
 .contact {
+  background-color: rgba(255, 255, 255, 0.409);
   border: 1px solid var(--primary-color);
   border-radius: 16px;
   margin: 0 auto;
@@ -453,6 +650,7 @@ input[type=search] {
   height: 35px;
   font-size: 16px;
   outline: none;
+  padding-left: 12px;
 }
 .form-group input:focus {
   border: 1px solid var(--secondary-color);
@@ -468,6 +666,8 @@ textarea {
   height: 120px;
   font-size: 16px;
   outline: none;
+  padding-left: 6px;
+  font-family: "M PLUS Rounded 1c", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 textarea:focus {
   border: 1px solid var(--secondary-color);

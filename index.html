@@ -127,16 +127,17 @@
             <div class="devided">
                 <img src="assets/img/chateau.png" alt="Illustration d'un chateau" class="illustration" />
             </div>
-            <div class="devided w-25">
+            <div class="devided w-25" id="illustrationUne">
                 <h1 class="title">Vivafest</h1>
                 <p class="desc">
                     Un festival de musique devenue tradition dans la ville d’Enghien
                 </p>
+                <a href="" class="btn btn-primary mt-20 w-fit">ACHETER DES BILLETS</a>
             </div>
         </div>
 
         <div class="flex-container l-gap mt-50">
-            <div class="devided w-25">
+            <div class="devided w-25" id="illustrationDeux">
                 <h1 class="title">Divers Mondes</h1>
                 <p class="desc">
                     Différents univers se retrouve à VivaFest, rock & roll, Jazz, RnB, ... Tout les mondes sont présents
@@ -158,37 +159,48 @@
                 Découvrez les artistes qui se produiront à VivaFest cette année
             </p>
             <div class="flex-container mt-20 m-gap">
-                <input type="search" name="search" id="search" placeholder="Rechercher un artiste">
-                <div class="btn-date">
-                    <a href="">Vendredi 11 juillet</a>
+                <div class="search-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="Rechercher un artiste">
                 </div>
-                <div class="btn-date">
-                    <a href="">Samedi 12 juillet</a>
-                </div>
-                <div class="btn-date">
-                    <a href="">Dimanche 13 juillet</a>
+                <div class="btn-date-wrapper">
+                    <div class="btn-date">
+                        <a href="">Vendredi 11 juillet</a>
+                    </div>
+                    <div class="btn-date">
+                        <a href="">Samedi 12 juillet</a>
+                    </div>
+                    <div class="btn-date">
+                        <a href="">Dimanche 13 juillet</a>
+                    </div>
                 </div>
             </div>
-            <div class="flex-container m-gap">
+            <div class="card-scroll-wrapper">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-img"><img src="assets/img/artistes/juliendoree.png"
+                                alt="Image de Julien Dorée">
+                        </div>
+                        <p>Julien Dorée</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-img"><img src="assets/img/artistes/lorenzo.png" alt="Image de Lorenzo">
+                        </div>
+                        <p>Lorenzo</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-img"><img src="assets/img/artistes/ziak.png" alt="Image de Ziak"></div>
+                        <p>Ziak</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-img"><img src="assets/img/artistes/jul.png" alt="Image de Jul"></div>
+                        <p>Jul</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-container">
                 <div class="btn-rounded">
                     <a href=""><i class="fa-solid fa-arrow-left"></i></a>
-                </div>
-                <div class="card">
-                    <div class="card-img"><img src="assets/img/artistes/juliendoree.png" alt="Image de Julien Dorée">
-                    </div>
-                    <p>Julien Dorée</p>
-                </div>
-                <div class="card">
-                    <div class="card-img"><img src="assets/img/artistes/lorenzo.png" alt="Image de Lorenzo"></div>
-                    <p>Lorenzo</p>
-                </div>
-                <div class="card">
-                    <div class="card-img"><img src="assets/img/artistes/ziak.png" alt="Image de Ziak"></div>
-                    <p>Ziak</p>
-                </div>
-                <div class="card">
-                    <div class="card-img"><img src="assets/img/artistes/jul.png" alt="Image de Jul"></div>
-                    <p>Jul</p>
                 </div>
                 <div class="btn-rounded">
                     <a href=""><i class="fa-solid fa-arrow-right"></i></a>
@@ -234,7 +246,7 @@
         <!-- A terminer pour que sa ressemble bien à la maquette -->
         <div class="slide-content">
             <h1 class="centered-txt title">Infos pratiques</h1>
-            <div class="flex-container">
+            <div class="flex-container mt-20 mr-30">
                 <img src="assets/img/enghien.png" alt="Photo du parc d'Enghien">
                 <div>
                     <h1 class="ml-24">L'évènement : Ou / quand / quoi</h1>
@@ -250,7 +262,7 @@
                 </div>
             </div>
 
-            <div class="flex-container mt-50">
+            <div class="flex-container mt-50 ml-30">
                 <div>
                     <h1 class="right-text-align mr-24">Accès PMR</h1>
                     <p class="right-text-align mr-24 txt-content">Le parc en lui même est déjà accessible sans
@@ -281,10 +293,10 @@
                 </div>
                 <div class="form-group">
                     <i class="fa-solid fa-phone"></i>
-                    <input type="number" name="phone" id="phone" placeholder="Téléphone">
+                    <input type="text" name="phone" id="phone" placeholder="Téléphone">
                 </div>
                 <textarea name="msg" id="msg" placeholder="Message" cols="50"></textarea>
-                <a href="" class="btn btn-primary">Envoyer</a>
+                <a href="" class="btn btn-primary">ENVOYER</a>
             </div>
         </div>
     </div>
