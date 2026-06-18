@@ -165,7 +165,6 @@ nav ul li a:hover::after {
 .btn-date-wrapper {
   display: flex;
   gap: 24px;
-  margin-left: 16px;
 }
 
 .btn-date {
@@ -305,15 +304,11 @@ nav ul li a:hover::after {
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  background-color: var(--primary-color);
-  border-radius: 16px;
+  perspective: 1000px;
   width: 200px;
-  height: fit-content;
-  overflow: hidden;
+  height: 257px;
+  background-color: transparent;
+  border-radius: 16px;
 }
 .card p {
   color: white;
@@ -322,11 +317,30 @@ nav ul li a:hover::after {
   font-size: 36px;
   padding: 8px;
 }
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
 
+.card-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
 .card-img img {
-  width: 200px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: 16px;
   box-shadow: 0px 5px 5px -0.5px rgba(0, 0, 0, 0.432);
+}
+.card-img p {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .card-container {
@@ -345,7 +359,34 @@ nav ul li a:hover::after {
   margin-top: 32px;
 }
 
-@media screen and (max-width: 402px) {
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 16px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 500px) {
   nav {
     width: 98%;
     height: 60px;
@@ -381,6 +422,12 @@ nav ul li a:hover::after {
   .slide-content {
     padding-top: 0px;
     margin-top: 180px;
+  }
+  .home p {
+    font-size: 2.4rem !important;
+  }
+  .home .star {
+    height: 60px;
   }
   .btn-date-wrapper {
     display: flex;
@@ -488,6 +535,37 @@ nav ul li a:hover::after {
     height: fit-content;
   }
 }
+#artiste img {
+  border-radius: 24px;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.432);
+  z-index: 999;
+}
+#artiste h1 {
+  position: relative;
+  left: -64px;
+  background-color: var(--primary-color);
+  border-radius: 64px;
+  color: white;
+  padding-left: 64px;
+  font-size: 6rem;
+  width: 500px;
+  z-index: -1;
+}
+#artiste h2 {
+  font-size: 3rem;
+  padding: 16px;
+  background-color: var(--secondary-color);
+  border-radius: 64px;
+  width: 250px;
+  font-family: "pain-de-mie", sans-serif;
+  color: white;
+  padding-left: 64px;
+}
+#artiste p {
+  width: 500px;
+  padding: 32px;
+}
+
 * {
   margin: 0;
   padding: 0;
