@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VivaFest - Billets</title>
+    <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="build/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <img src="assets/img/logo.png" alt="Logo de Vivafest" />
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#lineup">Line-up</a></li>
+            <li><a href="#engagements">Nos Engagements</a></li>
+            <li><a href="#infos">Infos Pratiques</a></li>
+            <a class="btn-nav btn-nav-active" href="billets.html">BILLETS</a>
+        </ul>
+        <div class="blackboard">
+            <div class="nav-lineup">
+                <!-- Eventuellement faire en JS pour éviter dupli et comme ça c'est opti -->
+                <p>Julien Doré</p>
+                <span>●</span>
+                <p>Jul</p>
+                <span>●</span>
+                <p>Lorenzo</p>
+                <span>●</span>
+                <p>Ziak</p>
+                <span>●</span>
+                <p>Flawed Mangoes</p>
+                <span>●</span>
+                <p>Rammstein</p>
+                <span>●</span>
+                <p>Damso</p>
+                <span>●</span>
+                <p>Hans Zimmer</p>
+                <span>●</span>
+                <p>Murray Gold</p>
+                <span>●</span>
+                <p>Pablo Andress</p>
+                <span>●</span>
+                <p>Segun Akinola</p>
+                <span>●</span>
+                <p>Helena</p>
+                <span>●</span>
+                <p>Meizer</p>
+                <span>●</span>
+                <p>Irlhiyu</p>
+                <span>●</span>
+                <p>Bigflo & Oli</p>
+                <span>●</span>
+                <p>Squeezie</p>
+                <span>●</span>
+                <p>Anyme</p>
+                <span>●</span>
+                <p>Stupeflip</p>
+                <span>●</span>
+                <p>Julien Doré</p>
+                <span>●</span>
+                <p>Jul</p>
+                <span>●</span>
+                <p>Lorenzo</p>
+                <span>●</span>
+                <p>Ziak</p>
+                <span>●</span>
+                <p>Flawed Mangoes</p>
+                <span>●</span>
+                <p>Rammstein</p>
+                <span>●</span>
+                <p>Damso</p>
+                <span>●</span>
+                <p>Hans Zimmer</p>
+                <span>●</span>
+                <p>Murray Gold</p>
+                <span>●</span>
+                <p>Pablo Andress</p>
+                <span>●</span>
+                <p>Segun Akinola</p>
+                <span>●</span>
+                <p>Helena</p>
+                <span>●</span>
+                <p>Meizer</p>
+                <span>●</span>
+                <p>Irlhiyu</p>
+                <span>●</span>
+                <p>Bigflo & Oli</p>
+                <span>●</span>
+                <p>Squeezie</p>
+                <span>●</span>
+                <p>Anyme</p>
+                <span>●</span>
+                <p>Stupeflip</p>
+                <span>●</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="slide" id="billets">
+        <div class="slide-content">
+            <h1 class="title centered-txt">Billets</h1>
+            <p class="desc centered-txt">Cliquez sur un PASS pour mettre dans le panier</p>
+
+            <div class="btn btn-basket">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="panier.html">Voir mon panier</a>
+            </div>
+
+            <div class="ticket-card-holder">
+                <div class="ticket-card-wrap">
+                    <div class="ticket-card-bottom">
+                        <p>Prix : 149,99€</p>
+                        <input type="number" name="quantity" id="quantity" value="1" min="1">
+                        <div class="btn-buy">
+                            <a href="">Ajouter au panier</a>
+                        </div>
+                    </div>
+                    <div class="ticket-card" id="ticket-pass-3j">
+                    <div class="ticket-card-top">
+                        <img src="assets/img/logo.png" alt="Logo de VivaFest">
+                        <p>Pass <br>3 Jours</p>
+                        <div class="calendar">
+                            <i class="fa-solid fa-calendar-days"></i><i class="fa-solid fa-calendar-days"></i><i
+                                class="fa-solid fa-calendar-days"></i>
+                        </div>
+                    </div>
+                    <p>JULIEN DOREE- JUL - LORENZO - ZIAK - FLAWED MANGOES - RAMMSTEIN - HANS ZIMMER - MURRAY GOLD -
+                        PABLO ANDRESS - SEGUN AKINOLA - HELENA - MEIZER - IRLHIYU - BIGFLO & OLY - SQUEEZIE - ANYME -
+                        STUPEFLIP</p>
+                    </div>
+                </div>
+                <div class="ticket-card-wrap">
+                    <div class="ticket-card-bottom">
+                        <p>Prix : 149,99€</p>
+                        <input type="number" name="quantity" id="quantity" value="1" min="1">
+                        <div class="btn-buy">
+                            <a href="">Ajouter au panier</a>
+                        </div>
+                    </div>
+                    <div class="ticket-card" id="ticket-pass-vdd">
+                    <div class="ticket-card-top">
+                        <img src="assets/img/logo.png" alt="Logo de VivaFest">
+                        <p>PASS <br>Vendredi 10</p>
+                        <div class="calendar">
+                            <i class="fa-solid fa-calendar-days"></i><i
+                                class="fa-solid fa-calendar-days disabled"></i><i
+                                class="fa-solid fa-calendar-days disabled"></i>
+                        </div>
+                    </div>
+                    <p>JULIEN DOREE- JUL - LORENZO - ZIAK - FLAWED MANGOES - RAMMSTEIN - HANS ZIMMER </p>
+                    </div>
+                </div>
+                <div class="ticket-card-wrap">
+                    <div class="ticket-card-bottom">
+                        <p>Prix : 149,99€</p>
+                        <input type="number" name="quantity" id="quantity" value="1" min="1">
+                        <div class="btn-buy">
+                            <a href="">Ajouter au panier</a>
+                        </div>
+                    </div>
+                    <div class="ticket-card" id="ticket-pass-sam">
+                    <div class="ticket-card-top">
+                        <img src="assets/img/logo.png" alt="Logo de VivaFest">
+                        <p>PASS <br> Samedi 11</p>
+                        <div class="calendar">
+                            <i class="fa-solid fa-calendar-days disabled"></i><i
+                                class="fa-solid fa-calendar-days"></i><i class="fa-solid fa-calendar-days disabled"></i>
+                        </div>
+                    </div>
+                    <p>MURRAY GOLD - PABLO ANDRESS - SEGUN AKINOLA - HELENA - MEIZER - IRLHIYU - BIGFLO & OLY - SQUEEZIE
+                        - ANYME - STUPEFLIP</p>
+                    </div>
+                </div>
+                <div class="ticket-card-wrap">
+                    <div class="ticket-card-bottom">
+                        <p>Prix : 149,99€</p>
+                        <input type="number" name="quantity" id="quantity" value="1" min="1">
+                        <div class="btn-buy">
+                            <a href="">Ajouter au panier</a>
+                        </div>
+                    </div>
+                    <div class="ticket-card" id="ticket-pass-dim">
+                    <div class="ticket-card-top">
+                        <img src="assets/img/logo.png" alt="Logo de VivaFest">
+                        <p>PASS <br>Dimanche 12</p>
+                        <div class="calendar">
+                            <i class="fa-solid fa-calendar-days disabled"></i><i
+                                class="fa-solid fa-calendar-days disabled"></i><i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                    </div>
+                    <p>MURRAY GOLD - PABLO ANDRESS - SEGUN AKINOLA - HELENA - MEIZER - IRLHIYU - BIGFLO & OLY - SQUEEZIE
+                        - ANYME - STUPEFLIP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
