@@ -535,6 +535,9 @@ nav ul li a:hover::after {
   nav img {
     width: 100px;
   }
+  #home img {
+    width: 200px;
+  }
   .navLeft {
     height: auto;
     padding: 8px 0;
@@ -573,7 +576,7 @@ nav ul li a:hover::after {
     margin-top: 180px;
   }
   .home p {
-    font-size: 2.4rem !important;
+    font-size: 2rem !important;
   }
   .home .star {
     height: 60px;
@@ -586,6 +589,9 @@ nav ul li a:hover::after {
   }
   #infos h1 {
     margin: 0 auto;
+  }
+  #infos h2 {
+    text-align: center;
   }
   #infos h1,
   #infos p {
@@ -695,6 +701,9 @@ nav ul li a:hover::after {
   }
   #home {
     margin-top: 20px;
+  }
+  #home img {
+    width: 250px;
   }
   .navLeft {
     height: auto;
@@ -1278,6 +1287,10 @@ h2 {
 
 p {
   font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+strong {
+  font-weight: bolder;
 }
 
 html,

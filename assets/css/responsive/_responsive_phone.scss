@@ -23,6 +23,12 @@
         }
     }
 
+    #home {
+        img {
+            width: 200px;
+        }
+    }
+
     .navLeft {
         height: auto;
         padding: 8px 0;
@@ -73,7 +79,7 @@
 
     .home {
         p {
-            font-size: 2.4rem !important;
+            font-size: 2rem !important;
         }
 
         .star {
@@ -93,6 +99,10 @@
 
         h1 {
             margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
         }
 
         h1,
