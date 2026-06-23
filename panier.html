@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VivaFest - Billets</title>
+    <title>VivaFest - Panier</title>
     <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon" />
     <link rel="stylesheet" href="build/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
@@ -102,16 +102,63 @@
 
     <div class="slide" id="basket">
         <div class="slide-content">
-            <div class="flex-container">
-                <div class="devided">
-                        <img src="assets/img/basket.png" alt="Image du panier">
-                        <p>VivaFest - Panier</p>
-                </div>
-                <div class="devided">
-                    <div class="mode-paiement">
-                        <p>TOTAL : 162,87 €</p>
+            <div class="flex-container l-gap">
+                <div class="devided basket-card">
+                    <div class="receipt">
+                        <pre>
+VivaFest - Panier
+
+02/06/2026        13h46
+-------------------------
+PASS 3 JOURS       89,99€
+1 x 89,99€
+
+PASS VENDREDI 10   78,88€
+2 x 39,49€
+
+TOTAL :           168,87€
+                        </pre>
+
+                        <div class="btn btn-primary">
+                            <a href="#pay"><i class="fa-solid fa-arrow-down-long"></i> Procéder au paiement</a>
+                        </div>
                     </div>
                 </div>
+                <section id="pay">
+                    <div class="devided">
+                        <div class="mode-paiement">
+                            <p>TOTAL : 162,87 €</p>
+                            <hr>
+
+                            <div class="mdp-card">
+                                <div class="mdp-card-img">
+                                    <img src="assets/img/payements/bancontact.png" alt="Bancontact">
+                                </div>
+                                <p>Bancontact</p>
+                            </div>
+
+                            <div class="mdp-card">
+                                <div class="mdp-card-img">
+                                    <img src="assets/img/payements/credit.png" alt="Carte de crédit">
+                                </div>
+                                <p>Carte de crédit</p>
+                            </div>
+
+                            <div class="mdp-card">
+                                <div class="mdp-card-img">
+                                    <img src="assets/img/payements/apple_pay.png" alt="Apple Pay">
+                                </div>
+                                <p>Apple Pay</p>
+                            </div>
+
+                            <div class="mdp-bottom">
+                                <div class="btn-buy-ticket">
+                                    <a href="">Payer <i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>

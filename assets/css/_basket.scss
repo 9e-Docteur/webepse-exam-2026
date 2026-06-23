@@ -1,3 +1,120 @@
 #basket {
-    
+    .basket-card {
+        position: relative;
+        display: inline-block;
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .receipt {
+            width: 420px;
+            height: 700px;
+            padding: 72px;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+            color: #111;
+            opacity: 0.98;
+
+            background-image: url("../assets/img/basket.png");
+            background-size: cover;
+
+            pre {
+                margin: 0 auto;
+                white-space: pre-wrap;
+                font-size: 20px;
+                line-height: 1.35;
+            }
+
+            .btn {
+                display: none;
+                font-family: "Albert Sans", sans-serif;
+                font-size: 18px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .mode-paiement {
+        background-color: white;
+        border: 1px solid var(--primary-color);
+        border-radius: 16px;
+        width: 600px;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        box-sizing: border-box;
+
+        p {
+            padding: 0 0 12px 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 32px;
+            font-family: "Albert Sans", sans-serif;
+        }
+
+        hr {
+            width: 95%;
+            margin: 0 auto 12px auto;
+        }
+    }
+}
+
+.mdp-card {
+    position: relative;
+    border: 2px solid var(--primary-color);
+    border-radius: 16px;
+    width: 90%;
+    height: 100px;
+    margin: 5px auto;
+
+    box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    p {
+        font-family: "Albert Sans", sans-serif;
+        text-transform: none !important;
+        font-weight: normal !important;
+        width: fit-content;
+        font-size: 24px !important;
+        font-style: normal !important;
+    }
+
+
+    .mdp-card-img {
+        padding: 16px;
+
+        img {
+            width: 80px;
+        }
+    }
+
+    &:hover {
+        background-color: var(--primary-color);
+        color: white;
+        transform: translateY(-5px);
+    }
+
+    transition: transform 0.5s;
+}
+
+.mdp-bottom {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+
+    .btn-buy-ticket {
+        text-align: center;
+        font-size: 32px;
+        align-content: center;
+    }
 }

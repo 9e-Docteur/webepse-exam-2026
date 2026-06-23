@@ -7,31 +7,38 @@
 }
 
 nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
     background-color: var(--primary-color);
     width: 95%;
-    height: 79px;
     margin: 16px auto;
     z-index: 999;
 
     position: fixed;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translateX(-50%);
 
-    border-radius: 9px 9px 0 0;
+    border-radius: 9px;
+    overflow: hidden;
 
-    img {
-        height: inherit;
-    }
 
 
     ul {
         display: flex;
-        position: relative;
-        transform: translateY(30px);
-        float: right;
+        align-items: center;
+        align-content: center;
         gap: 48px;
+        margin: 0;
+        padding-right: 24px;
 
         list-style: none;
+
+        label {
+            display: none;
+        }
 
         li {
             a {
@@ -64,6 +71,48 @@ nav {
             }
         }
     }
+
+
+}
+
+.navLeft {
+    display: flex;
+    align-items: center;
+    height: 79px;
+    gap: 32px;
+    width: fit-content;
+
+    img {
+        height: inherit;
+    }
+
+    .vivaFest {
+        display: none;
+    }
+}
+
+.vivaFestTop {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+
+    p {
+        font-size: 48px;
+        font-family: "Albert Sans", sans-serif;
+    }
+
+    small {
+        font-size: 16px;
+        font-family: "Albert Sans", sans-serif;
+    }
+}
+
+.vivaFestBottom {
+    color: white;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    font-weight: lighter;
 }
 
 .blackboard {
@@ -72,8 +121,6 @@ nav {
     height: 45px;
     z-index: 1;
     position: relative;
-    transform: translateY(-5px);
-    border-radius: 0px 0px 9px 9px;
     overflow: hidden;
 
 
@@ -100,10 +147,13 @@ nav {
             font-family: "Inter", "system-ui";
             text-transform: uppercase;
             flex-shrink: 0;
+            font-weight: bold;
         }
 
         span {
             color: var(--secondary-color);
+            font-size: 32px;
+            transform: translateY(-8px);
         }
     }
 }

@@ -3,7 +3,11 @@
 @use "_font" as font;
 @use "_tool" as tool;
 @use "_card" as card;
-@use "_responsive" as resp;
+@use "responsive/responsive_phone" as resp;
+@use "responsive/responsive_basket" as resp_bask;
+@use "responsive/_responsive_tablet" as tablet;
+@use "responsive/_responsive_general" as resp_shared;
+@use "responsive/_burger" as burger;
 @use "_artist" as artist;
 @use "_billets" as billets;
 @use "_basket" as basket;
@@ -20,7 +24,8 @@ body {
     background-size: contain;
 }
 
-h1 {
+h1,
+h2 {
     font-family: "pain-de-mie", sans-serif;
     color: var(--primary-color);
 }
@@ -37,14 +42,17 @@ body {
 
 .slide {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    position: relative;
 }
 
 .slide-content {
     padding-top: 180px;
 }
 
-
+.menu-toggle {
+    display: none;
+}
 
 .home {
 

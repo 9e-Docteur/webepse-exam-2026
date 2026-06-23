@@ -1,0 +1,33 @@
+@media screen and (max-width: 500px) {
+    .mode-paiement {
+        width: 95% !important;
+        height: 95% !important;
+
+        p {
+            font-size: 18px !important;
+        }
+
+        .mdp-card {
+            p {
+                font-size: 18px !important;
+            }
+        }
+    }
+
+    #basket {
+        .slide-content {
+            margin-top: 0;
+        }
+    }
+
+    .receipt {
+        width: 100% !important;
+        height: 80% !important;
+
+        padding: 0;
+
+        .btn {
+            display: block !important;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@media screen and (max-width: 1024px) {
+
+    .btn-date-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .btn-date {
+        flex-shrink: 0;
+        height: fit-content;
+        width: fit-content;
+        scroll-snap-align: center;
+    }
+
+    #lineup {
+        .card-scroll-wrapper {
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        .card {
+            flex-shrink: 0;
+            scroll-snap-align: center;
+        }
+
+        .flex-container:last-of-type {
+            justify-content: center;
+            margin-top: 20px;
+        }
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        margin-top: 20px;
+    }
+}

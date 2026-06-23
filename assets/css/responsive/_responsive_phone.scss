@@ -1,17 +1,38 @@
 @media screen and (max-width: 500px) {
+    .vivaFest {
+        display: none !important;
+    }
+
     nav {
         width: 98%;
-        height: 60px;
-        border-radius: 0;
+        height: auto;
         position: fixed;
+        align-items: center;
 
         ul {
-            display: none;
+            align-items: center;
 
             li {
-                a {}
+                display: none;
+            }
+
+            label::before {
+                font-size: 48px !important;
             }
         }
+
+        img {
+            width: 100px;
+        }
+    }
+
+    .navLeft {
+        height: auto;
+        padding: 8px 0;
+    }
+
+    #billetNavBarItem {
+        display: none;
     }
 
     .flex-container {
@@ -50,7 +71,7 @@
     }
 
     .home {
-        p{
+        p {
             font-size: 2.4rem !important;
         }
 
@@ -59,57 +80,6 @@
         }
     }
 
-    .btn-date-wrapper {
-        display: flex;
-        overflow-x: auto;
-        overflow-y: hidden;
-        gap: 12px;
-        width: 100%;
-        padding: 10px 0;
-        scroll-snap-type: x mandatory;
-    }
-
-    .btn-date {
-        flex-shrink: 0;
-        height: fit-content;
-        width: fit-content;
-        scroll-snap-align: center;
-    }
-
-    #lineup {
-        .card-scroll-wrapper {
-            overflow-x: auto;
-            overflow-y: hidden;
-            -webkit-overflow-scrolling: touch;
-            width: 100%;
-            padding: 0 10px;
-        }
-
-        .card-container {
-            display: flex;
-            gap: 12px;
-            justify-content: center;
-            width: fit-content;
-            margin: 0 auto;
-        }
-
-        .card {
-            flex-shrink: 0;
-            scroll-snap-align: center;
-        }
-
-        .flex-container:last-of-type {
-            justify-content: center;
-            margin-top: 20px;
-        }
-    }
-
-    .btn-container {
-        display: flex;
-        justify-content: center;
-        gap: 32px;
-        margin-top: 20px;
-    }
 
     .engagementImg {
         display: none;
@@ -124,7 +94,8 @@
             margin: 0 auto;
         }
 
-        h1, p {
+        h1,
+        p {
             width: 80% !important;
             text-align: center;
         }

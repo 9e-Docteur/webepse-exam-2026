@@ -1,0 +1,69 @@
+// Panneau caché par défaut (desktop)
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    nav ul {
+        label {
+            display: block !important;
+        }
+
+        label::before {
+            content: "menu";
+            font-family: "Material Symbols Outlined";
+            font-size: 64px;
+            padding: 16px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        gap: 40px;
+
+        border-radius: 32px 0 0 32px;
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 90vh;
+
+        background-color: var(--primary-color);
+        z-index: 1000;
+
+        transform: translateX(100%);
+        transition: transform 0.35s ease;
+
+        a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: "Albert Sans", system-ui;
+            font-weight: bold;
+            font-size: 24px;
+        }
+    }
+
+    .mobile-menu-close {
+        position: absolute;
+        top: 24px;
+        right: 28px;
+
+        color: white;
+        font-size: 32px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    // Checkbox coché -> panneau entre
+    .menu-toggle:checked~.mobile-menu {
+        transform: translateX(0);
+    }
+}
