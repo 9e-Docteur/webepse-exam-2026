@@ -1,7 +1,4 @@
 @media screen and (max-width: 500px) {
-    .vivaFest {
-        display: none !important;
-    }
 
     nav {
         width: 98%;
@@ -29,6 +26,10 @@
     .navLeft {
         height: auto;
         padding: 8px 0;
+
+        .vivaFest {
+            display: none;
+        }
     }
 
     #billetNavBarItem {

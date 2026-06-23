@@ -505,9 +505,6 @@ nav ul li a:hover::after {
 }
 
 @media screen and (max-width: 500px) {
-  .vivaFest {
-    display: none !important;
-  }
   nav {
     width: 98%;
     height: auto;
@@ -529,6 +526,9 @@ nav ul li a:hover::after {
   .navLeft {
     height: auto;
     padding: 8px 0;
+  }
+  .navLeft .vivaFest {
+    display: none;
   }
   #billetNavBarItem {
     display: none;
@@ -852,13 +852,13 @@ nav ul li a:hover::after {
     gap: 40px;
     border-radius: 32px 0 0 32px;
     position: fixed;
-    top: 0;
+    top: 50%;
     right: 0;
-    width: 80%;
+    width: 40%;
     height: 90vh;
     background-color: var(--primary-color);
     z-index: 1000;
-    transform: translateX(100%);
+    transform: translate(100%, -50%);
     transition: transform 0.35s ease;
   }
   .mobile-menu a {
@@ -868,6 +868,18 @@ nav ul li a:hover::after {
     font-family: "Albert Sans", system-ui;
     font-weight: bold;
     font-size: 24px;
+  }
+  .mobile-menu .navLeft {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .mobile-menu .navLeft .vivaFest {
+    padding: 16px;
+  }
+  .mobile-menu .navLeft img {
+    width: 100px;
   }
   .mobile-menu-close {
     position: absolute;
@@ -879,7 +891,26 @@ nav ul li a:hover::after {
     cursor: pointer;
   }
   .menu-toggle:checked ~ .mobile-menu {
-    transform: translateX(0);
+    transform: translate(0, -50%);
+  }
+}
+@media screen and (max-width: 727px) {
+  .mobile-menu {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mobile-menu .navLeft .vivaFest {
+    display: block;
+  }
+  .mobile-menu .navLeft .vivaFest .vivaFestTop p {
+    font-size: 24px;
+  }
+  .mobile-menu .navLeft .vivaFest .vivaFestTop small {
+    font-size: 12px;
+  }
+  .mobile-menu .navLeft .vivaFest .vivaFestBottom p {
+    font-size: 18px;
   }
 }
 #artiste .artistInfo {
@@ -1205,12 +1236,13 @@ body {
 .home .star {
   opacity: 0;
   animation: apparence 0.8s 0.8s ease forwards;
+  transform: translateY(15px);
 }
 .home .star:nth-of-type(1) {
-  filter: invert(18%) sepia(92%) saturate(7492%) hue-rotate(356deg);
+  color: red;
 }
 .home .star:nth-of-type(2) {
-  filter: invert(80%) sepia(60%) saturate(7492%) hue-rotate(360deg);
+  color: orange;
 }
 .home p {
   opacity: 0;
