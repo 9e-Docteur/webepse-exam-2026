@@ -27,6 +27,7 @@ nav {
   margin: 16px auto;
   z-index: 999;
   position: fixed;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 9px;
@@ -285,6 +286,17 @@ nav ul li a:hover::after {
   text-decoration: none;
   color: black;
   font-family: "Albert Sans", sans-serif;
+}
+.btn-basket::after {
+  content: "1";
+  position: absolute;
+  background-color: var(--primary-color);
+  border-radius: 100%;
+  color: white;
+  width: 24px;
+  height: 24px;
+  font-family: "Albert Sans", sans-serif;
+  transform: translate(-95px, -15px);
 }
 
 .btn-buy {
@@ -630,9 +642,21 @@ nav ul li a:hover::after {
     height: fit-content;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 874px) and (max-width: 1024px) {
+  #basket .flex-container {
+    flex-direction: row;
+  }
+  #basket .basket-card {
+    width: fit-content;
+  }
   .mode-paiement {
-    width: 95% !important;
+    width: 400px !important;
+    height: 80% !important;
+  }
+}
+@media screen and (max-width: 874px) {
+  .mode-paiement {
+    width: 300px !important;
     height: 95% !important;
   }
   .mode-paiement p {
@@ -644,16 +668,14 @@ nav ul li a:hover::after {
   #basket .slide-content {
     margin-top: 0;
   }
-  .receipt {
-    width: 100% !important;
-    height: 80% !important;
-    padding: 0;
+  #basket .flex-container {
+    flex-direction: column;
   }
-  .receipt .btn {
-    display: block !important;
+  .receipt {
+    margin: 0 auto;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 1024px) {
+@media screen and (min-width: 500px) and (max-width: 1090px) {
   nav {
     height: auto;
     align-items: center;
@@ -670,6 +692,9 @@ nav ul li a:hover::after {
   }
   nav img {
     width: 90px;
+  }
+  #home {
+    margin-top: 20px;
   }
   .navLeft {
     height: auto;
@@ -774,6 +799,7 @@ nav ul li a:hover::after {
   }
   #infos .btn {
     margin: 12px 0 0;
+    transform: translateX(24px);
   }
   footer img:nth-last-of-type(1) {
     margin: 0 auto;
@@ -827,11 +853,52 @@ nav ul li a:hover::after {
     margin-top: 20px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .ticket-card {
+    width: 90% !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+  .ticket-card-bottom {
+    width: 90% !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+  .ticket-card-wrap:hover .ticket-card {
+    transform: translateX(-50%) translateY(-32px) !important;
+  }
+  .ticket-card-wrap:hover .ticket-card-bottom {
+    transform: translateX(-50%) translateY(32px) !important;
+  }
+}
+@media screen and (max-width: 1377px) {
+  #billets .btn-basket {
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+  }
+}
+@media screen and (max-width: 639px) {
+  #billets .slide-content {
+    margin: 0;
+  }
+  .calendar {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 448px) {
+  .ticket-card p {
+    font-size: 12px !important;
+  }
+  .ticket-card-bottom input {
+    width: 32px;
+  }
+}
 .mobile-menu {
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1090px) {
   nav ul label {
     display: block !important;
   }
@@ -1037,7 +1104,7 @@ nav ul li a:hover::after {
 .ticket-card .ticket-card-top p {
   position: relative;
   text-align: start !important;
-  font-size: 2rem;
+  font-size: 2rem !important;
   padding: 16px;
 }
 

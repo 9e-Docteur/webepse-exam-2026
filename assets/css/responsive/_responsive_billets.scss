@@ -1,0 +1,70 @@
+@media screen and (max-width: 1024px) {
+    .ticket-card {
+        width: 90% !important;
+
+        left: 50% !important;
+
+        transform: translateX(-50%);
+    }
+
+    .ticket-card-bottom {
+        width: 90% !important;
+
+        left: 50% !important;
+
+        transform: translateX(-50%);
+    }
+
+    .ticket-card-wrap {
+
+        &:hover {
+            .ticket-card {
+                transform: translateX(-50%) translateY(-32px) !important;
+            }
+
+            .ticket-card-bottom {
+                transform: translateX(-50%) translateY(32px) !important;
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 1377px) {
+    #billets {
+        .btn-basket {
+            position: relative;
+            margin: 0 auto;
+            left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 639px) {
+
+    #billets {
+        .slide-content {
+            margin: 0;
+        }
+    }
+
+    .calendar {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 448px) {
+    .ticket-card {
+
+        p {
+            font-size: 12px !important;
+        }
+    }
+
+    .ticket-card-bottom {
+        input {
+            width: 32px;
+        }
+    }
+}

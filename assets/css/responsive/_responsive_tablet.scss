@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) and (max-width: 1024px) {
+@media screen and (min-width: 500px) and (max-width: 1090px) {
 
     nav {
         height: auto;
@@ -20,6 +20,10 @@
         img {
             width: 90px;
         }
+    }
+
+    #home {
+        margin-top: 20px;
     }
 
     .navLeft {
@@ -154,6 +158,7 @@
 
         .btn {
             margin: 12px 0 0;
+            transform: translateX(24px);
         }
     }
 

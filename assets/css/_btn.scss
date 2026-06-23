@@ -161,6 +161,20 @@
         color: black;
         font-family: "Albert Sans", sans-serif;
     }
+
+    &::after {
+        content: "1";
+        position: absolute;
+        background-color: var(--primary-color);
+        border-radius: 100%;
+        color: white;
+
+        width: 24px;
+        height: 24px;
+
+        font-family: "Albert Sans", sans-serif;
+        transform: translate(-95px, -15px);
+    }
 }
 
 .btn-buy {
