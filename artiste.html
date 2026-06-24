@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VivaFest - Julien Doré</title>
-    <meta name="description" content="Découvrez Julien Doré et les artistes de VivaFest, festival de musique à Enghien." />
+    <meta name="description"
+        content="Découvrez Julien Doré et les artistes de VivaFest, festival de musique à Enghien." />
     <link rel="shortcut icon" href="assets/img/logo.ico" type="image/x-icon" />
     <link rel="stylesheet" href="build/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
@@ -16,7 +17,8 @@
     <!-- Opengraph -->
     <meta property="og:site_name" content="VivaFest" />
     <meta property="og:title" content="VivaFest - Julien Doré" />
-    <meta property="og:description" content="Découvrez Julien Doré et les artistes de VivaFest, festival de musique à Enghien." />
+    <meta property="og:description"
+        content="Découvrez Julien Doré et les artistes de VivaFest, festival de musique à Enghien." />
     <meta property="og:locale" content="fr_FR" />
 </head>
 
@@ -147,7 +149,14 @@
         <div class="slide-content">
             <div class="flex-container">
                 <div class="devided">
-                    <img src="assets/img/artistes/juliendoree.png" alt="Photo de Julien Doré">
+                    <div class="artistImg">
+                        <img src="assets/img/artistes/juliendoree.png" alt="Photo de Julien Doré">
+
+                        <div class="artistInfo">
+                            <h1 class="artistName">Julien Doré</h1>
+                            <h2 class="artistGenre">Pop | Vendredi 10 à 15h45 - Scène POP</h2>
+                        </div>
+                    </div>
                     <div class="socials">
                         <a href="https://www.instagram.com/juliendoreofficiel/" target="_blank"><i
                                 class="fa-brands fa-instagram"></i></a>
@@ -156,12 +165,11 @@
                         <a href="https://juliendore.com/" target="_blank"><i class="fa-solid fa-globe"></i></a>
                         <a href="https://www.youtube.com/@juliendoreofficiel" target="_blank"><i
                                 class="fa-brands fa-youtube"></i></a>
+                        <a href="https://open.spotify.com/intl-fr/artist/6jStlKLflTMUN6BajxrNlj"><i
+                                class="fa-brands fa-spotify"></i></a>
+                        <a href="https://music.apple.com/fr/artist/julien-dor%C3%A9/261284322"><i
+                                class="fa-brands fa-itunes"></i></a>
                     </div>
-                </div>
-
-                <div class="artistInfo">
-                    <h1 class="artistName">Julien Doré</h1>
-                    <h2 class="artistGenre">Pop</h2>
                 </div>
 
                 <div class="devided">
@@ -176,7 +184,14 @@
                         <strong>musique</strong> avec des <strong>groupes</strong> comme <strong>Dig Up Elvis</strong>
                         et <strong>The Jean D’Ormesson Disco Suicide</strong>, avant de se faire
                         <strong>connaître</strong> du <strong>grand public</strong> en <strong>2007</strong> en
-                        remportant l’émission <strong>Nouvelle Star</strong>.</p>
+                        remportant l’émission <strong>Nouvelle Star</strong>.
+                    </p>
+
+                    <iframe id="artistIframe" data-testid="embed-iframe" style="border-radius:12px"
+                        src="https://open.spotify.com/embed/album/707oefFoxuM7G5KTc88iWO?utm_source=generator&si=828e936e8af24250"
+                        width="100%" height="152" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
                 </div>
             </div>
         </div>

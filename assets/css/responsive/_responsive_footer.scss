@@ -1,0 +1,12 @@
+@media screen and (max-width: 1537px) {
+    .partenaires {
+
+        img:nth-of-type(n+3) {
+            display: none;
+        }
+    }
+
+    .l-gap {
+        gap: 32px;
+    }
+}

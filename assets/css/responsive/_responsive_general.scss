@@ -2,11 +2,14 @@
 
     .btn-date-wrapper {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
         gap: 12px;
         width: 100%;
         padding: 10px 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
     }
 
     .btn-date {
@@ -47,7 +50,7 @@
     .btn-container {
         display: flex;
         justify-content: center;
-        gap: 32px;
+        gap: 64px;
         margin-top: 20px;
     }
 }

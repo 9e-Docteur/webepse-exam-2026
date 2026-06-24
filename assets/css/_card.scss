@@ -92,4 +92,10 @@
 
 .card-back {
     transform: rotateY(180deg);
+
+    small {
+        color: white;
+        font-family: "Albert Sans", sans-serif;
+        font-size: 1rem;
+    }
 }

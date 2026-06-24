@@ -89,6 +89,9 @@ nav ul li a:hover::after {
 .navLeft .vivaFest {
   display: none;
 }
+.navLeft .vivaFest p {
+  font-family: "Albert Sans", sans-serif;
+}
 
 .vivaFestTop {
   display: flex;
@@ -181,6 +184,9 @@ nav ul li a:hover::after {
 .btn:hover {
   filter: saturate(50%);
 }
+.btn {
+  cursor: pointer;
+}
 
 .btn-secondary {
   background-color: var(--secondary-color);
@@ -191,6 +197,12 @@ nav ul li a:hover::after {
 }
 .btn-primary:hover {
   border: 1px solid var(--primary-color);
+}
+
+.little-btn {
+  font-size: 16px;
+  font-family: "Albert Sans", sans-serif;
+  margin-top: 25px;
 }
 
 .btn-nav {
@@ -532,6 +544,11 @@ nav ul li a:hover::after {
 .card-back {
   transform: rotateY(180deg);
 }
+.card-back small {
+  color: white;
+  font-family: "Albert Sans", sans-serif;
+  font-size: 1rem;
+}
 
 @media screen and (max-width: 500px) {
   nav {
@@ -588,15 +605,31 @@ nav ul li a:hover::after {
   .devided {
     width: 100%;
   }
-  .slide-content {
-    padding-top: 0px;
-    margin-top: 180px;
-  }
   .home p {
     font-size: 2rem !important;
   }
   .home .star {
     height: 60px;
+  }
+  #home-next h1,
+  #infos h1,
+  #engagements h1,
+  #lineup h1 {
+    font-size: 48px;
+  }
+  #home-next h2,
+  #infos h2,
+  #engagements h2 {
+    font-size: 32px;
+    width: 250px;
+    margin: 0 auto;
+  }
+  #home-next p,
+  #infos p,
+  #engagements p {
+    text-align: start !important;
+    margin-left: 25px !important;
+    margin-right: 25px !important;
   }
   .engagementImg {
     display: none;
@@ -658,9 +691,6 @@ nav ul li a:hover::after {
   }
   textarea {
     width: 95% !important;
-  }
-  .partenaires img:nth-of-type(n+3) {
-    display: none;
   }
   .footer-contact img {
     margin: 0 auto;
@@ -725,9 +755,20 @@ nav ul li a:hover::after {
   #home img {
     width: 250px;
   }
+  #home-next p {
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+  }
+  #lineup .btn-date-wrapper {
+    justify-content: center;
+  }
   .navLeft {
     height: auto;
     padding: 6px 0;
+  }
+  .vivaFestTop {
+    display: flex;
+    gap: 8px;
   }
   .vivaFestTop p {
     font-size: 28px;
@@ -804,6 +845,9 @@ nav ul li a:hover::after {
     text-align: left;
     width: auto;
   }
+  #infos h2 {
+    font-size: 38px !important;
+  }
   #infos .ml-30,
   #infos .mr-30 {
     margin: 0;
@@ -838,14 +882,31 @@ nav ul li a:hover::after {
     display: none;
   }
 }
+@media screen and (min-width: 500px) and (max-width: 690px) {
+  #infos img {
+    display: none !important;
+  }
+  #infos h2,
+  #infos p {
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+  #infos .btn {
+    margin: 0 auto;
+    transform: translateX(0);
+  }
+}
 @media screen and (max-width: 1024px) {
   .btn-date-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     gap: 12px;
     width: 100%;
     padding: 10px 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
   }
   .btn-date {
     flex-shrink: 0;
@@ -878,13 +939,13 @@ nav ul li a:hover::after {
   .btn-container {
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 64px;
     margin-top: 20px;
   }
 }
 @media screen and (max-width: 1024px) {
   .ticket-card {
-    width: 90% !important;
+    width: 100% !important;
     left: 50% !important;
     transform: translateX(-50%);
   }
@@ -934,6 +995,14 @@ nav ul li a:hover::after {
     width: 32px;
   }
 }
+@media screen and (max-width: 1537px) {
+  .partenaires img:nth-of-type(n+3) {
+    display: none;
+  }
+  .l-gap {
+    gap: 32px;
+  }
+}
 .mobile-menu {
   display: none;
 }
@@ -962,7 +1031,7 @@ nav ul li a:hover::after {
     top: 50%;
     right: 0;
     width: 40%;
-    height: 90vh;
+    height: 95vh;
     background-color: var(--primary-color);
     z-index: 1000;
     transform: translate(100%, -50%);
@@ -975,6 +1044,9 @@ nav ul li a:hover::after {
     font-family: "Albert Sans", system-ui;
     font-weight: bold;
     font-size: 18px;
+  }
+  .mobile-menu p {
+    font-family: "Albert Sans", sans-serif;
   }
   .mobile-menu .navLeft {
     display: block;
@@ -1024,44 +1096,48 @@ nav ul li a:hover::after {
     font-size: 18px;
   }
 }
+#artiste .artistImg {
+  position: relative;
+  width: fit-content;
+}
 #artiste .artistInfo {
   position: absolute;
-  left: 45%;
-  transform: translateY(25px);
+  left: 50%;
+  top: 230px;
+  transform: translate(50%, 0);
   z-index: -1;
 }
-#artiste img {
-  border-radius: 24px;
-  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.432);
-  width: 600px;
-}
-#artiste h1 {
+#artiste .artistInfo .artistName {
   position: relative;
   top: -230px;
-  left: -64px;
+  left: -90px;
   background-color: var(--primary-color);
   border-radius: 64px;
   color: white;
   padding-left: 80px;
   font-size: 6rem;
-  width: 600px;
+  width: 650px;
   letter-spacing: 4px;
 }
-#artiste h2 {
+#artiste .artistInfo .artistGenre {
   position: relative;
   top: -235px;
-  left: -64px;
+  left: -90px;
   font-size: 3rem;
-  padding: 16px;
   background-color: var(--secondary-color);
   border-radius: 100px;
-  width: 250px;
+  width: 550px;
   font-family: "pain-de-mie", sans-serif;
   color: white;
   padding-left: 80px;
   box-shadow: -5px -5px 20px 5px rgba(0, 0, 0, 0.532);
   letter-spacing: 3px;
-  font-size: 4rem;
+  font-size: 32px;
+}
+#artiste img {
+  border-radius: 24px;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.432);
+  width: 600px;
 }
 #artiste p {
   font-size: 1.5rem;
@@ -1081,13 +1157,24 @@ nav ul li a:hover::after {
   transition: all 0.25s;
 }
 #artiste .socials i {
-  font-size: 60px;
+  font-size: 48px;
   color: var(--primary-color);
 }
 #artiste .socials i:hover {
   color: var(--secondary-color);
 }
+#artiste #artistIframe {
+  padding-left: 64px;
+}
 
+@media screen and (max-width: 1413px) {
+  .artistInfo {
+    left: 30% !important;
+  }
+  #artiste p {
+    font-size: 18px !important;
+  }
+}
 .ticket-card-holder {
   margin: 25px auto;
   display: flex;
@@ -1328,6 +1415,10 @@ strong {
   font-family: "M Plus Rounded 1c Black", sans-serif;
 }
 
+.light-txt {
+  font-weight: 100;
+}
+
 html,
 body {
   width: 100%;
@@ -1384,6 +1475,8 @@ body {
 .date {
   display: flex;
   gap: 8px;
+  margin: 0 auto;
+  width: fit-content;
 }
 .date img {
   width: 12px;
@@ -1438,6 +1531,9 @@ body {
 #infos .btn {
   margin-top: 8px;
   width: fit-content;
+}
+#infos h2 {
+  font-size: 38px;
 }
 
 .contact {
@@ -1528,7 +1624,7 @@ footer h1 {
 .footer-contact {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: fit-content;
   text-align: center;
 }
 .footer-contact a {

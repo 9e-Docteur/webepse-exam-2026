@@ -72,11 +72,6 @@
         width: 100%;
     }
 
-    .slide-content {
-        padding-top: 0px;
-        margin-top: 180px;
-    }
-
     .home {
         p {
             font-size: 2rem !important;
@@ -86,6 +81,34 @@
             height: 60px;
         }
     }
+
+
+    #home-next,
+    #infos,
+    #engagements,
+    #lineup {
+        h1 {
+            font-size: 48px;
+        }
+    }
+
+
+    #home-next,
+    #infos,
+    #engagements {
+        h2 {
+            font-size: 32px;
+            width: 250px;
+            margin: 0 auto;
+        }
+
+        p {
+            text-align: start !important;
+            margin-left: 25px !important;
+            margin-right: 25px !important;
+        }
+    }
+
 
 
     .engagementImg {
@@ -169,13 +192,6 @@
 
     textarea {
         width: 95% !important;
-    }
-
-    .partenaires {
-
-        img:nth-of-type(n+3) {
-            display: none;
-        }
     }
 
     .footer-contact {

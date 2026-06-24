@@ -27,6 +27,8 @@
         filter: saturate(50%);
     }
 
+    cursor: pointer;
+
 }
 
 .btn-secondary {
@@ -39,6 +41,12 @@
     &:hover {
         border: 1px solid var(--primary-color);
     }
+}
+
+.little-btn {
+    font-size: 16px;
+    font-family: "Albert Sans", sans-serif;
+    margin-top: 25px;
 }
 
 .btn-nav {
