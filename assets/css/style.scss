@@ -36,7 +36,7 @@ p {
 }
 
 strong {
-    font-weight: bolder;
+    font-family: "M Plus Rounded 1c Black", sans-serif;
 }
 
 html,
@@ -154,6 +154,10 @@ body {
     width: 350px;
 }
 
+#engagementVivaFestLogo {
+    display: block;
+}
+
 #infos {
 
     img {
@@ -264,7 +268,6 @@ footer {
 
     img {
         width: 141px;
-        height: fit-content;
         padding: 16px;
 
         filter: grayscale(1);
@@ -274,7 +277,7 @@ footer {
 .footer-contact {
     display: flex;
     flex-direction: column;
-    width: 180px;
+    width: 100%;
     text-align: center;
 
     a {
@@ -287,10 +290,15 @@ footer {
             color: var(--secondary-color);
         }
     }
+}
 
-    img {
-        margin: 25px auto;
-    }
+#logoFooter {
+    width: 220px;
+    margin: 25px;
+}
+
+#payementCards {
+    margin: 25px auto;
 }
 
 .footer-credit {

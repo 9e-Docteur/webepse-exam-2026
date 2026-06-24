@@ -38,8 +38,8 @@
 
   document.addEventListener("click", function (e) {
     if (!menu.checked) return;
-    if (e.target === menu) return; // clic synthétique sur le checkbox (toggle)
-    if (e.target.closest && e.target.closest('label[for="menu"]')) return; // burger / X
+    if (e.target === menu) return;
+    if (e.target.closest && e.target.closest('label[for="menu"]')) return;
     if (panel.contains(e.target)) return;
     menu.checked = false;
   });

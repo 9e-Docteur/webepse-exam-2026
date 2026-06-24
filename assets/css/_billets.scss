@@ -14,11 +14,11 @@
 
     &:hover {
         .ticket-card {
-            transform: translateY(-32px);
+            transform: translateY(0px);
         }
 
         .ticket-card-bottom {
-            transform: translateY(32px);
+            transform: translateY(52px);
         }
 
     }
@@ -61,7 +61,7 @@
     }
 
     &:hover {
-        transform: translateY(-32px);
+        transform: translateY(32px);
     }
 
     .ticket-card-top {
@@ -71,7 +71,7 @@
         p {
             position: relative;
             text-align: start !important;
-            font-size: 2rem !important;
+            font-size: 2rem;
             padding: 16px;
         }
     }

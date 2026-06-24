@@ -92,6 +92,10 @@
         display: none;
     }
 
+    #engagementVivaFestLogo {
+        display: none !important;
+    }
+
     #infos {
         img {
             display: none;
@@ -168,6 +172,7 @@
     }
 
     .partenaires {
+
         img:nth-of-type(n+3) {
             display: none;
         }

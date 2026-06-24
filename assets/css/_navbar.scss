@@ -145,16 +145,20 @@ nav {
         will-change: transform;
 
         p {
-            font-family: "Inter", "system-ui";
             text-transform: uppercase;
             flex-shrink: 0;
             font-weight: bold;
         }
 
+        p,
+        span {
+            font-family: "Inter", sans-serif;
+        }
+
+
         span {
             color: var(--secondary-color);
-            font-size: 32px;
-            transform: translateY(-8px);
+            font-size: 12px;
         }
     }
 }

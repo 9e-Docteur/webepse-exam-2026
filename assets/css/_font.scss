@@ -8,4 +8,12 @@
     src: url("../assets/font/Inter.ttf");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap'); //M PLUS Rounded 1c
+@font-face {
+    font-family: "M PLUS Rounded 1c";
+    src: url("../assets/font/MPLUSRounded1c-Regular.ttf");
+}
+
+@font-face {
+    font-family: "M PLUS Rounded 1c Black";
+    src: url("../assets/font/MPLUSRounded1c-Black.ttf");
+}

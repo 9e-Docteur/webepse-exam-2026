@@ -1,0 +1,28 @@
+ <meta
+      name="description"
+      content="Formation diplômante BES Web Developer (Webdeveloper) à l'EPSE. Apprends HTML, CSS, React, Vue.js, PHP, Symfony et fais un stage de 7 à 11 semaines."
+    >`
+<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+ <link rel="apple-touch-icon" sizes="57x57" href="/images/ico/apple-touch-icon-57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/ico/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/ico/apple-touch-icon-76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/ico/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/ico/apple-touch-icon-120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/ico/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/ico/apple-touch-icon-152.png">
+ <link rel="icon" type="image/png" href="/images/ico/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="/images/ico/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/images/ico/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/images/ico/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/images/ico/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/ico/favicon.png">
+    <meta name="application-name" content="EPSE WebDev">
+    <meta property="og:title" content="EPSE Section Web-Dev">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/images/logo_epse_1800x945.png">
+    <meta property="og:image:width" content="1800">
+    <meta property="og:image:height" content="945">
+    <meta property="og:url" content="https://webdev.epse.be/">
+    <meta property="og:description" content="L'EPSE, anciennement Enseignement de Promotion Sociale d'Enghien, est un établissement d'Enseignement Pour Adultes, reconnu et subsidié par la Fédération Wallonie-Bruxelles; membre de la Fédération des Etablissements Libres Subventionnés">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="EPSE WebDev">

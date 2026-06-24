@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
 :root {
   --primary-color: #006EF5;
   --secondary-color: #FEAA02;
@@ -12,6 +11,14 @@
 @font-face {
   font-family: "Inter";
   src: url("../assets/font/Inter.ttf");
+}
+@font-face {
+  font-family: "M PLUS Rounded 1c";
+  src: url("../assets/font/MPLUSRounded1c-Regular.ttf");
+}
+@font-face {
+  font-family: "M PLUS Rounded 1c Black";
+  src: url("../assets/font/MPLUSRounded1c-Black.ttf");
 }
 @font-face {
   font-family: "Inter";
@@ -130,15 +137,17 @@ nav ul li a:hover::after {
   will-change: transform;
 }
 .blackboard .nav-lineup p {
-  font-family: "Inter", "system-ui";
   text-transform: uppercase;
   flex-shrink: 0;
   font-weight: bold;
 }
+.blackboard .nav-lineup p,
+.blackboard .nav-lineup span {
+  font-family: "Inter", sans-serif;
+}
 .blackboard .nav-lineup span {
   color: var(--secondary-color);
-  font-size: 32px;
-  transform: translateY(-8px);
+  font-size: 12px;
 }
 
 @keyframes animLineUp {
@@ -188,7 +197,7 @@ nav ul li a:hover::after {
   display: block;
   padding: 6px;
   border-radius: 13px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman", Times, serif !important;
   color: white;
   text-decoration: none;
   font-size: 26px;
@@ -273,6 +282,7 @@ nav ul li a:hover::after {
   align-items: center;
   gap: 8px;
   color: black;
+  margin-top: 25px !important;
   font-size: 1.2rem;
   position: absolute;
   right: 10%;
@@ -496,20 +506,27 @@ nav ul li a:hover::after {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  transform: perspective(800px);
+  will-change: transform;
 }
 
-.card-front, .card-back {
+.card-front,
+.card-back {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
+  inset: 0;
+  -webkit-backface-visibility: hidden !important;
+  /* Safari */
+  backface-visibility: hidden !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--primary-color);
   border-radius: 16px;
+}
+
+.card-front {
+  transform: rotateY(0);
 }
 
 .card-back {
@@ -583,6 +600,9 @@ nav ul li a:hover::after {
   }
   .engagementImg {
     display: none;
+  }
+  #engagementVivaFestLogo {
+    display: none !important;
   }
   #infos img {
     display: none;
@@ -874,10 +894,10 @@ nav ul li a:hover::after {
     transform: translateX(-50%);
   }
   .ticket-card-wrap:hover .ticket-card {
-    transform: translateX(-50%) translateY(-32px) !important;
+    transform: translateX(-50%) translateY(0px) !important;
   }
   .ticket-card-wrap:hover .ticket-card-bottom {
-    transform: translateX(-50%) translateY(32px) !important;
+    transform: translateX(-50%) translateY(64px) !important;
   }
 }
 @media screen and (max-width: 1377px) {
@@ -888,11 +908,22 @@ nav ul li a:hover::after {
   }
 }
 @media screen and (max-width: 639px) {
+  .ticket-card-bottom {
+    padding-top: 20px !important;
+  }
   #billets .slide-content {
     margin: 0;
   }
   .calendar {
     display: none !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .ticket-card .ticket-card-top img {
+    width: 35%;
+  }
+  .ticket-card .ticket-card-top p {
+    font-size: 24px !important;
   }
 }
 @media screen and (max-width: 448px) {
@@ -915,7 +946,7 @@ nav ul li a:hover::after {
     content: "menu";
     font-family: "Material Symbols Outlined";
     font-size: 64px;
-    padding: 16px;
+    padding: 8px;
     color: white;
     cursor: pointer;
   }
@@ -943,7 +974,7 @@ nav ul li a:hover::after {
     text-transform: uppercase;
     font-family: "Albert Sans", system-ui;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
   }
   .mobile-menu .navLeft {
     display: block;
@@ -957,10 +988,14 @@ nav ul li a:hover::after {
   .mobile-menu .navLeft img {
     width: 100px;
   }
+  .mobile-menu .btn-nav {
+    margin: 0;
+  }
   .mobile-menu-close {
     position: absolute;
     top: 24px;
     right: 28px;
+    font-family: "M PLUS Rounded 1c";
     color: white;
     font-size: 32px;
     font-weight: bold;
@@ -1068,10 +1103,10 @@ nav ul li a:hover::after {
   height: 355px;
 }
 .ticket-card-wrap:hover .ticket-card {
-  transform: translateY(-32px);
+  transform: translateY(0px);
 }
 .ticket-card-wrap:hover .ticket-card-bottom {
-  transform: translateY(32px);
+  transform: translateY(52px);
 }
 
 .ticket-card {
@@ -1104,7 +1139,7 @@ nav ul li a:hover::after {
   padding: 16px;
 }
 .ticket-card:hover {
-  transform: translateY(-32px);
+  transform: translateY(32px);
 }
 .ticket-card .ticket-card-top {
   display: flex;
@@ -1113,7 +1148,7 @@ nav ul li a:hover::after {
 .ticket-card .ticket-card-top p {
   position: relative;
   text-align: start !important;
-  font-size: 2rem !important;
+  font-size: 2rem;
   padding: 16px;
 }
 
@@ -1290,7 +1325,7 @@ p {
 }
 
 strong {
-  font-weight: bolder;
+  font-family: "M Plus Rounded 1c Black", sans-serif;
 }
 
 html,
@@ -1389,6 +1424,10 @@ body {
   width: 350px;
 }
 
+#engagementVivaFestLogo {
+  display: block;
+}
+
 #infos img {
   height: 250px;
 }
@@ -1482,7 +1521,6 @@ footer h1 {
 }
 .partenaires img {
   width: 141px;
-  height: fit-content;
   padding: 16px;
   filter: grayscale(1);
 }
@@ -1490,7 +1528,7 @@ footer h1 {
 .footer-contact {
   display: flex;
   flex-direction: column;
-  width: 180px;
+  width: 100%;
   text-align: center;
 }
 .footer-contact a {
@@ -1502,7 +1540,13 @@ footer h1 {
 .footer-contact a:hover {
   color: var(--secondary-color);
 }
-.footer-contact img {
+
+#logoFooter {
+  width: 220px;
+  margin: 25px;
+}
+
+#payementCards {
   margin: 25px auto;
 }
 
