@@ -50,3 +50,10 @@
     });
   });
 })();
+
+const imgNav = document.querySelector("#navLogo");
+
+imgNav.addEventListener("click", () => {
+  window.location.href = "index.html";
+  console.log("ok");
+});
