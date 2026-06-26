@@ -1,4 +1,4 @@
-@media screen and (min-width: 874px) and (max-width: 1024px) {
+@media screen and (min-width: 874px) and (max-width: 1090px) {
     #basket {
         .flex-container {
             flex-direction: row;
@@ -43,5 +43,11 @@
 
     .receipt {
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 438px) {
+    .receipt {
+        padding: 0 !important;
     }
 }

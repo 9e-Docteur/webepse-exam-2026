@@ -698,7 +698,7 @@ nav ul li a:hover::after {
     height: fit-content;
   }
 }
-@media screen and (min-width: 874px) and (max-width: 1024px) {
+@media screen and (min-width: 874px) and (max-width: 1090px) {
   #basket .flex-container {
     flex-direction: row;
   }
@@ -729,6 +729,11 @@ nav ul li a:hover::after {
   }
   .receipt {
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 438px) {
+  .receipt {
+    padding: 0 !important;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 1090px) {
@@ -1387,6 +1392,46 @@ nav ul li a:hover::after {
   text-align: center;
   font-size: 32px;
   align-content: center;
+}
+
+.basket-qt-container {
+  display: flex;
+  padding: 6px;
+}
+.basket-qt-container a {
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+}
+.basket-qt-container a:hover {
+  color: white !important;
+}
+.basket-qt-container a {
+  transition: all 0.25s;
+}
+.basket-qt-container a:first-of-type {
+  border: 1px solid red;
+  color: red;
+  background-color: white;
+}
+.basket-qt-container a:first-of-type:hover {
+  background-color: red;
+}
+.basket-qt-container a:nth-of-type(2) {
+  border: 1px solid green;
+  color: green;
+  background-color: white;
+}
+.basket-qt-container a:nth-of-type(2):hover {
+  background-color: green;
+}
+.basket-qt-container input {
+  width: 50px;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
 }
 
 * {
