@@ -1,6 +1,22 @@
+@media screen and (max-width: 1377px) {
+    #billets {
+        .ticket-card-holder {
+            width: 100%;
+        }
+
+        .btn-basket {
+            position: relative;
+            margin: 0 auto;
+            left: 0;
+        }
+
+    }
+}
+
+
 @media screen and (max-width: 1024px) {
     .ticket-card {
-        width: 100% !important;
+        width: 95% !important;
 
         left: 50% !important;
 
@@ -8,7 +24,7 @@
     }
 
     .ticket-card-bottom {
-        width: 90% !important;
+        width: 95% !important;
 
         left: 50% !important;
 
@@ -31,12 +47,26 @@
 
 }
 
-@media screen and (max-width: 1377px) {
-    #billets {
-        .btn-basket {
-            position: relative;
-            margin: 0 auto;
-            left: 0;
+@media screen and (max-width: 457px) {
+    .ticket-card {
+        height: 65% !important;
+    }
+
+    .ticket-card-bottom {
+        transform: translateX(-50%) translateY(-85%);
+    }
+
+    .ticket-card-wrap {
+
+        &:hover {
+            .ticket-card {
+                transform: translateX(-50%) translateY(0px) !important;
+            }
+
+            .ticket-card-bottom {
+                transform: translateX(-50%) translateY(5%) !important;
+            }
+
         }
     }
 }

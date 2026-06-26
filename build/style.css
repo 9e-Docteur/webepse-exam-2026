@@ -86,6 +86,7 @@ nav ul li a:hover::after {
 }
 .navLeft img {
   height: inherit;
+  cursor: pointer;
 }
 .navLeft .vivaFest {
   display: none;
@@ -974,14 +975,24 @@ nav ul li a:hover::after {
     margin-top: 20px;
   }
 }
+@media screen and (max-width: 1377px) {
+  #billets .ticket-card-holder {
+    width: 100%;
+  }
+  #billets .btn-basket {
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+  }
+}
 @media screen and (max-width: 1024px) {
   .ticket-card {
-    width: 100% !important;
+    width: 95% !important;
     left: 50% !important;
     transform: translateX(-50%);
   }
   .ticket-card-bottom {
-    width: 90% !important;
+    width: 95% !important;
     left: 50% !important;
     transform: translateX(-50%);
   }
@@ -992,11 +1003,18 @@ nav ul li a:hover::after {
     transform: translateX(-50%) translateY(64px) !important;
   }
 }
-@media screen and (max-width: 1377px) {
-  #billets .btn-basket {
-    position: relative;
-    margin: 0 auto;
-    left: 0;
+@media screen and (max-width: 457px) {
+  .ticket-card {
+    height: 65% !important;
+  }
+  .ticket-card-bottom {
+    transform: translateX(-50%) translateY(-85%);
+  }
+  .ticket-card-wrap:hover .ticket-card {
+    transform: translateX(-50%) translateY(0px) !important;
+  }
+  .ticket-card-wrap:hover .ticket-card-bottom {
+    transform: translateX(-50%) translateY(5%) !important;
   }
 }
 @media screen and (max-width: 639px) {
@@ -1677,6 +1695,9 @@ textarea:focus {
 
 footer {
   background-color: var(--primary-color);
+  background-image: var(--noise);
+  background-repeat: repeat;
+  background-blend-mode: overlay;
 }
 footer img:nth-last-of-type(1) {
   width: 223px;

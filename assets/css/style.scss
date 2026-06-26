@@ -263,6 +263,9 @@ textarea {
 
 footer {
     background-color: var(--primary-color);
+    background-image: var(--noise);
+    background-repeat: repeat;
+    background-blend-mode: overlay;
 
     img:nth-last-of-type(1) {
         width: 223px;
