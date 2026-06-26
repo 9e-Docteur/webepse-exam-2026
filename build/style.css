@@ -185,7 +185,7 @@ nav ul li a:hover::after {
   filter: saturate(50%);
 }
 .btn {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .btn-secondary {
@@ -355,6 +355,7 @@ nav ul li a:hover::after {
   color: black;
 }
 .btn-buy-ticket {
+  cursor: pointer;
   transition: transform 0.5s;
 }
 
@@ -1307,7 +1308,7 @@ nav ul li a:hover::after {
   font-family: "Courier New", Courier, monospace;
   color: #111;
   opacity: 0.98;
-  background-image: url("../assets/img/basket.png");
+  background-image: url("../assets/img/basket.webp");
   background-size: cover;
 }
 #basket .basket-card .receipt pre {
@@ -1441,7 +1442,7 @@ nav ul li a:hover::after {
 }
 
 body {
-  background: url("../assets/img/tile.png") #fcecda;
+  background: url("../assets/img/tile.webp") #fcecda;
   background-repeat: repeat;
   background-size: contain;
 }

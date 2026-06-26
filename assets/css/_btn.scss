@@ -27,7 +27,7 @@
         filter: saturate(50%);
     }
 
-    cursor: pointer;
+    cursor: pointer !important;
 
 }
 
@@ -225,6 +225,8 @@
             color: black;
         }
     }
+
+    cursor: pointer;
 
     transition: transform 0.5s;
 }
