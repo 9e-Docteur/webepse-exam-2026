@@ -59,11 +59,11 @@
     margin-right: 24px;
 }
 
-.mr-30{
+.mr-30 {
     margin-right: 30%;
 }
 
-.ml-30{
+.ml-30 {
     margin-left: 30%;
 }
 
@@ -95,4 +95,21 @@
     transform: translate(-50%, -50%);
 
     text-align: center;
+}
+
+.noise {
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: var(--noise) repeat;
+        border-radius: inherit;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    >* {
+        position: relative;
+        z-index: 2;
+    }
 }

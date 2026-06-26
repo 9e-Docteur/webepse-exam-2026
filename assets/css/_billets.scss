@@ -79,6 +79,9 @@
 
 .calendar {
     display: flex;
+    position: absolute;
+    right: 16px;
+    top: 16px;
 
     i {
         float: right;

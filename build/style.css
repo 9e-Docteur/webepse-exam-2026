@@ -2,6 +2,7 @@
   --primary-color: #006EF5;
   --secondary-color: #FEAA02;
   --primary-text-color: white;
+  --noise: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='160'%20height='160'%3E%3Cfilter%20id='n'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.65'%20numOctaves='3'%20stitchTiles='stitch'/%3E%3CfeColorMatrix%20type='saturate'%20values='0'/%3E%3C/filter%3E%3Crect%20width='100%25'%20height='100%25'%20filter='url(%23n)'%20opacity='0.4'/%3E%3C/svg%3E");
 }
 
 @font-face {
@@ -456,6 +457,20 @@ nav ul li a:hover::after {
   text-align: center;
 }
 
+.noise::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--noise) repeat;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 1;
+}
+.noise > * {
+  position: relative;
+  z-index: 2;
+}
+
 .card {
   perspective: 1000px;
   width: 200px;
@@ -632,6 +647,9 @@ nav ul li a:hover::after {
     margin-left: 25px !important;
     margin-right: 25px !important;
   }
+  #home-next p {
+    text-align: center !important;
+  }
   .engagementImg {
     display: none;
   }
@@ -655,6 +673,9 @@ nav ul li a:hover::after {
   #infos .btn {
     display: block;
     margin: 25px auto;
+  }
+  #infos p {
+    line-height: 42px;
   }
   .mr-30 {
     margin-right: 0;
@@ -760,6 +781,10 @@ nav ul li a:hover::after {
   }
   #home img {
     width: 250px;
+  }
+  .desc {
+    width: 80%;
+    margin: 0 auto;
   }
   #home-next p {
     margin-left: 15% !important;
@@ -981,9 +1006,6 @@ nav ul li a:hover::after {
   #billets .slide-content {
     margin: 0;
   }
-  .calendar {
-    display: none !important;
-  }
 }
 @media screen and (max-width: 480px) {
   .ticket-card .ticket-card-top img {
@@ -999,6 +1021,11 @@ nav ul li a:hover::after {
   }
   .ticket-card-bottom input {
     width: 32px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .calendar {
+    display: none !important;
   }
 }
 @media screen and (max-width: 1537px) {
@@ -1247,6 +1274,9 @@ nav ul li a:hover::after {
 
 .calendar {
   display: flex;
+  position: absolute;
+  right: 16px;
+  top: 16px;
 }
 .calendar i {
   float: right;
@@ -1398,6 +1428,7 @@ nav ul li a:hover::after {
 .basket-qt-container {
   display: flex;
   padding: 6px;
+  cursor: pointer;
 }
 .basket-qt-container a {
   text-decoration: none;

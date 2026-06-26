@@ -109,6 +109,12 @@
         }
     }
 
+    #home-next {
+        p {
+            text-align: center !important;
+        }
+    }
+
 
 
     .engagementImg {
@@ -141,6 +147,10 @@
         .btn {
             display: block;
             margin: 25px auto;
+        }
+
+        p {
+            line-height: 42px;
         }
     }
 
