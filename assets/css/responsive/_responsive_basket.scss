@@ -37,12 +37,64 @@
         }
 
         .flex-container {
-            flex-direction: column;
+            flex-direction: row;
         }
     }
 
     .receipt {
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 874px) {
+    .mode-paiement {
+        width: 300px !important;
+        height: 95% !important;
+
+        p {
+            font-size: 18px !important;
+        }
+
+        .mdp-card {
+            p {
+                font-size: 18px !important;
+            }
+        }
+    }
+
+    #basket {
+        .slide-content {
+            margin-top: 0;
+        }
+
+        .flex-container {
+            flex-direction: row;
+        }
+
+        .l-gap {
+            gap: 0px;
+        }
+    }
+
+    .receipt {
+        margin: 0 auto !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #basket {
+        .flex-container {
+            flex-direction: column;
+        }
+
+        .mode-paiement {
+            width: 400px !important;
+            margin: 32px auto;
+        }
+
+        .btn-primary {
+            display: block !important;
+        }
     }
 }
 

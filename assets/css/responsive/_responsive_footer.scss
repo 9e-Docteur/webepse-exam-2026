@@ -1,12 +1,36 @@
 @media screen and (max-width: 1537px) {
     .partenaires {
 
+        img:nth-of-type(n+4) {
+            display: none;
+        }
+    }
+
+    footer {
+        h1 {
+            font-size: 48px;
+        }
+    }
+
+    footer {
+        .l-gap {
+            gap: 32px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .partenaires {
+
         img:nth-of-type(n+3) {
             display: none;
         }
     }
 
-    .l-gap {
-        gap: 32px;
+    footer {
+        h1 {
+            font-size: 32px;
+        }
     }
 }

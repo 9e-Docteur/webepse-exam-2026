@@ -1,4 +1,8 @@
 #basket {
+    #pay {
+        scroll-margin-top: 140px;
+    }
+
     .basket-card {
         position: relative;
         display: inline-block;
@@ -10,9 +14,13 @@
         }
 
         .receipt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
             width: 420px;
             height: 700px;
-            padding: 72px;
             border-radius: 4px;
             font-family: "Courier New", Courier, monospace;
             color: #111;

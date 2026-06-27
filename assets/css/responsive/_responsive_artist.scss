@@ -1,11 +1,184 @@
 @media screen and (max-width: 1413px) {
-    .artistInfo {
-        left: 30% !important;
-    }
 
     #artiste {
         p {
             font-size: 18px !important;
+            width: 90%;
+        }
+    }
+
+    #artistIframe {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1284px) {
+    .artistImg {
+        img {
+            width: 300px !important;
+        }
+
+        margin: 0 auto;
+        transform: translateX(-50px) !important;
+    }
+
+    #artistIframe {
+        display: flex;
+        width: 60%;
+        margin: 25px auto !important;
+        padding: 0 !important;
+    }
+
+    #artiste {
+        p {
+            font-size: 24px !important;
+            width: 80%;
+        }
+    }
+
+    .artistName {
+        font-size: 64px !important;
+        width: 500px !important;
+    }
+
+    .artistGenre {
+        font-size: 24px !important;
+        width: 400px !important;
+    }
+
+    .artistInfo {
+        transform: translateX(150px) !important;
+    }
+
+    #artiste {
+        .flex-container {
+            flex-direction: column;
+        }
+
+        p {
+            margin: 0 auto !important;
+        }
+
+        .devided:first-of-type {
+            transform: translateX(-150px) !important;
+        }
+    }
+
+    .socials {
+        transform: translateX(350px) translateY(-150px) !important;
+
+        i {
+            font-size: 48px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .socials {
+        width: fit-content !important;
+        margin: 0 auto;
+        transform: translateX(305px) translateY(-150px) !important;
+
+
+        i {
+            font-size: 36px !important;
+        }
+
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .artistInfo {
+        .artistName {
+            font-size: 48px !important;
+            width: 380px !important;
+        }
+
+        .artistGenre {
+            font-size: 24px !important;
+            width: 320px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 713px) {
+    #artiste {
+
+        .flex-container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .devided,
+        .devided:first-of-type {
+            width: 100%;
+            transform: none !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .artistImg {
+            display: contents;
+        }
+
+        img {
+            order: 1;
+            width: 80% !important;
+            max-width: 280px;
+            margin: 0 auto;
+            transform: none !important;
+        }
+
+        .socials {
+            order: 2;
+            width: fit-content !important;
+            margin: 0 auto !important;
+            transform: none !important;
+
+            i {
+                font-size: 32px !important;
+            }
+        }
+
+        .artistInfo {
+            order: 3;
+            position: static !important;
+            transform: none !important;
+            text-align: center;
+
+            .artistName {
+                width: fit-content !important;
+                max-width: 90%;
+                margin: 0 auto;
+                padding: 8px 32px !important;
+                font-size: 32px !important;
+                text-align: center;
+            }
+
+            .artistGenre {
+                width: fit-content !important;
+                max-width: 90%;
+                margin: 8px auto 0;
+                padding: 8px 32px !important;
+                font-size: 18px !important;
+                text-align: center;
+            }
+        }
+
+        p {
+            width: 90% !important;
+            margin: 24px auto !important;
+            padding: 0 !important;
+            text-align: center;
+            font-size: 16px !important;
+        }
+
+        #artistIframe {
+            width: 90% !important;
+            margin: 16px auto !important;
         }
     }
 }
