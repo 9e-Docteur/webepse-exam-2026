@@ -145,26 +145,32 @@
 
         .artistInfo {
             order: 3;
-            position: static !important;
+            align-self: flex-start !important;
+            position: relative !important;
+            left: 0 !important;
             transform: none !important;
-            text-align: center;
+            text-align: left;
 
             .artistName {
                 width: fit-content !important;
                 max-width: 90%;
-                margin: 0 auto;
+                margin: 0;
                 padding: 8px 32px !important;
-                font-size: 32px !important;
-                text-align: center;
+                font-size: 48px !important;
+                text-align: left;
+
+                transform: translateX(-25px) !important;
+
             }
 
             .artistGenre {
                 width: fit-content !important;
                 max-width: 90%;
-                margin: 8px auto 0;
+                margin: 8px 0 0;
                 padding: 8px 32px !important;
                 font-size: 18px !important;
-                text-align: center;
+                text-align: left;
+                transform: translateX(-20px) translateY(-10px) !important;
             }
         }
 
