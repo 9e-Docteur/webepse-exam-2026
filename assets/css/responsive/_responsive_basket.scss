@@ -100,6 +100,13 @@
 
 @media screen and (max-width: 438px) {
     .receipt {
+        width: 100% !important;
         padding: 0 !important;
+    }
+
+    #basket {
+        .mode-paiement {
+            width: 100% !important;
+        }
     }
 }

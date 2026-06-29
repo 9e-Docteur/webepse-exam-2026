@@ -24,7 +24,7 @@
 
     #artistIframe {
         display: flex;
-        width: 60%;
+        width: 70%;
         margin: 25px auto !important;
         padding: 0 !important;
     }
@@ -32,7 +32,7 @@
     #artiste {
         p {
             font-size: 24px !important;
-            width: 80%;
+            width: 90%;
         }
     }
 
@@ -66,6 +66,7 @@
 
     .socials {
         transform: translateX(350px) translateY(-150px) !important;
+        margin-bottom: -80px;
 
         i {
             font-size: 48px !important;
@@ -76,7 +77,7 @@
 @media screen and (max-width: 1090px) {
     .socials {
         width: fit-content !important;
-        margin: 0 auto;
+        margin: 0 auto -80px;
         transform: translateX(305px) translateY(-150px) !important;
 
 
@@ -185,6 +186,16 @@
         #artistIframe {
             width: 90% !important;
             margin: 16px auto !important;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #artiste {
+        p {
+            font-size: 18px !important;
+            text-align: left;
+            line-height: 34px !important;
         }
     }
 }

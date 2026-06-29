@@ -104,14 +104,18 @@
 
         p {
             text-align: start !important;
-            margin-left: 25px auto !important;
-            margin-right: 25px auto !important;
+            margin: 0 25px !important;
         }
     }
 
     #home-next {
         p {
             text-align: center !important;
+            margin: 0 auto !important;
+        }
+
+        .mt-50 {
+            margin-top: 0;
         }
     }
 
@@ -149,7 +153,12 @@
             margin: 25px auto;
         }
 
+        .flex-container:nth-of-type(2) .btn {
+            margin: 25px auto !important;
+        }
+
         p {
+            margin: 0 auto !important;
             line-height: 42px;
         }
     }
@@ -188,10 +197,22 @@
         margin: 0 auto;
     }
 
+    #contact {
+        min-height: auto;
+        padding-bottom: 40px;
+    }
+
     .contact {
         display: block;
-        margin: 0 auto;
+        margin: 0 auto 24px;
         width: 90% !important;
+        height: auto;
+
+        input,
+        textarea {
+            -webkit-appearance: none;
+            appearance: none;
+        }
     }
 
     .form-group {
