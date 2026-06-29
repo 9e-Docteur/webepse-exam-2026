@@ -1,8 +1,8 @@
-@use "_navbar.scss" as nav;
-@use "_btn" as btn;
-@use "_font" as font;
-@use "_tool" as tool;
-@use "_card" as card;
+@use "layout/_navbar.scss" as nav;
+@use "componants/_btn.scss" as btn;
+@use "componants/_font.scss" as font;
+@use "componants/_tool.scss" as tool;
+@use "componants/_card.scss" as card;
 @use "responsive/responsive_phone" as resp;
 @use "responsive/responsive_basket" as resp_bask;
 @use "responsive/_responsive_tablet" as tablet;
@@ -10,10 +10,10 @@
 @use "responsive/_responsive_billets" as resp_billet;
 @use "responsive/_responsive_footer" as resp_foot;
 @use "responsive/_burger" as burger;
-@use "_artist" as artist;
+@use "pages/_artist.scss" as artist;
 @use "responsive/_responsive_artist" as resp_artist;
-@use "_billets" as billets;
-@use "_basket" as basket;
+@use "pages/_billets.scss" as billets;
+@use "pages/_basket.scss" as basket;
 
 * {
     margin: 0;
